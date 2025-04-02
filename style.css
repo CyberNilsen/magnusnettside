@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    flex: 1;
+}
+
+.menu-icon {
+    display: none; 
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    z-index: 2000;
+    
+}
+
+
+nav {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1001;
+}
+
+.Magnuslogogreie {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.magnusbildertekst {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.magnusbilder-gallery {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    margin-left: 35%;
+}
+
+.magnusbilde {
+    max-width: 650px; 
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.magnusbilde img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+
+
+.hovedmagnus {
+    margin-top: 60px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.contact-details {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.contact-details h2 {
+    margin-bottom: 10px;
+}
+
+/* Center the text */
+.ommagnustekst {
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20%; /* Adjust this to move the text vertically down or up */
+    font-size: 2em; /* Optional: Adjust font size if needed */
+}
+
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.spørmagnus {
+    text-align: center;
+    margin-top: 9%;
+}
+
+.magnus {
+    width: 50%;
+    text-align: left;
+    padding-left: 50px; 
+    color: white;
+    font-size: 20px;
+}
+
+.magnuskjekk-image {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto; 
+    display: block;
+}
+
+
+footer {
+    background: #000000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    margin-top: auto;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #8a8a8a;
+}
+
+.footer .row ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+@media (max-width: 768px) {
+        
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    
+    .magnusbilde {
+        width: 100%; 
+    }
+
+  
+        .menu-icon {
+            display: block; 
+            top: 10px;
+        }
+    
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
