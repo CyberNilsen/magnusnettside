@@ -140,11 +140,11 @@ nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Center the text */
+
 .ommagnustekst {
-    text-align: center; /* Centers the text horizontally */
-    margin-top: 20%; /* Adjust this to move the text vertically down or up */
-    font-size: 2em; /* Optional: Adjust font size if needed */
+    text-align: center; 
+    margin-top: 20%; 
+    font-size: 2em;
 }
 
 
